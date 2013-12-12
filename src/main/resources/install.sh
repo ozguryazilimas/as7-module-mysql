@@ -8,4 +8,4 @@ fi
 
 cp -r com $1/modules
 
-$1/bin/jboss-cli.sh --connect /subsystem=datasources/jdbc-driver=com.mysql:add(driver-name=com.mysql,driver-module-name=com.mysql)
+$1/bin/jboss-cli.sh --connect "/subsystem=datasources/jdbc-driver=com.mysql:add(driver-name=com.mysql,driver-module-name=com.mysql)"
